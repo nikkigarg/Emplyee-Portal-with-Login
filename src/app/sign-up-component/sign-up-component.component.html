@@ -1,0 +1,34 @@
+<div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-heading">
+        <h2 class="text-center">SIGN UP</h2>
+      </div>
+      <hr />
+      <div class="modal-body">
+        <form action="" role="form">
+          <div>
+            <input type="text" class="input pass" placeholder="Employee Name" name="eName" [(ngModel)]="employee.empName"/>
+          </div>
+          <div>
+            <input type="number" class="input pass" placeholder="Employee Number" name="eNumber" [(ngModel)]="employee.empNo"/>
+          </div>
+          <div>
+            <input type="text" class="input pass" placeholder="Service Line" name="serviceLine" [(ngModel)]="employee.serviceLine"/>
+          </div>
+          <div >
+            <input type="text" class="input pass" placeholder="Designation" name="designation" [(ngModel)]="employee.designation"/>
+          </div>
+          <div >
+            <input type="text" class="input pass" placeholder="Role" name="role" [(ngModel)]="employee.role"/>
+          </div>
+          <div>
+            <input type="password" class="input pass" placeholder="Password" name="password" [(ngModel)]="employee.password"/>
+          </div>
+          <div class="form-group text-center">
+            <button type="submit" class="btn btn-primary" (click)="signUp()">Sign Up</button>
+            <span>already have an account? <a routerLink="/login" class="btn btn-link">Login</a></span>   
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

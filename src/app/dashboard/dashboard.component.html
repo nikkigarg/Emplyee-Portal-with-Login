@@ -1,0 +1,33 @@
+<div class="panel">
+  <div class="panel-body">
+    <div style="padding:10px 0 20px 0;font-size: 14px;font-weight: 800;border-bottom:1px solid #ccc">DASHBOARD
+      <button type="button" (click)="signOut()" class="btn btn-primary" style="float:right">Sign Out</button>
+    </div>
+    <div style="padding: 10px 0 10px 0;font-size: 12px;font-weight: 800;">
+      EMPLOYEE INFORMATION</div>
+    <div >
+        <table class="table">
+            <thead class="thead-dark" style="background-color:black; color:white">
+              <tr>
+                <th scope="col">SERIAL NO</th>
+                <th scope="col">EMPLOYEE Number</th>
+                <th scope="col">EMPLOYEE NAME</th>
+                <th scope="col">DESIGNATION</th>
+                <th scope="col">SERVICE LINE</th>
+                <th scope="col">ROLE</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let employee of employess">
+                <td>{{employee.empid}}</td>
+                <td>{{employee.empNo}}</td>
+                <td>{{employee.empName}}</td>
+                <td>{{employee.designation}}</td>
+                <td>{{employee.serviceLine}}</td>
+                <td>{{employee.role}}</td>
+              </tr>
+            </tbody>
+          </table>      
+    </div>
+  </div>
+</div>
