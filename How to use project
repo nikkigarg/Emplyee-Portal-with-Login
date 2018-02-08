@@ -1,0 +1,7 @@
+--------------How to use this project ------
+
+It has login, signup portal with employee dashboard.
+It is made using Angular 5, Spring boot and my-sql server
+put all the code in one folder except EmployeeStarter folder. Because rest file are for ui code
+and u can keep in one folder and server code out side of that folder
+and you have to run both server and client side application saparetly.
